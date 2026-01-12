@@ -1,6 +1,12 @@
 import React, { useState } from "react";
 
-export default function ProjectPage({ title, images, description, details }) {
+export default function ProjectPage({
+  title,
+  images,
+  description,
+  details,
+  repository,
+}) {
   const [modalImg, setModalImg] = useState(null);
 
   return (
@@ -40,6 +46,11 @@ export default function ProjectPage({ title, images, description, details }) {
           />
         </div>
       )}
+      <h3>Github repository: </h3>
+      <a href="${repository}">{repository}</a>
+      <br />
+      <br />
+      <br />
     </div>
   );
 }

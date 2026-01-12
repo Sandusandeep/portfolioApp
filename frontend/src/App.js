@@ -214,6 +214,7 @@ function App() {
                     <li>Responsive design</li>
                   </ul>
                 }
+                repository={"https://github.com/Sandusandeep/todolist-mern"}
               />
             }
           />
@@ -232,6 +233,7 @@ function App() {
                     <li>Clean, modern design</li>
                   </ul>
                 }
+                repository={"https://github.com/Sandusandeep/e-form"}
               />
             }
           />
@@ -249,6 +251,9 @@ function App() {
                     <li>User authentication and order history</li>
                     <li>Admin dashboard for product management</li>
                   </ul>
+                }
+                repository={
+                  "https://github.com/Sandusandeep/e-commerce-MegaMart"
                 }
               />
             }
