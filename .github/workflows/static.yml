@@ -1,5 +1,4 @@
-# Deploy React app to GitHub Pages
-name: Deploy React to Pages
+name: Deploy React App to GitHub Pages
 
 on:
   push:
@@ -17,34 +16,34 @@ concurrency:
 
 jobs:
   deploy:
-    runs-on: ubuntu-latest
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Setup Node.js
+      - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 18
 
-      # STEP 3: Install dependencies
       - name: Install dependencies
-        working-directory: frontend
-        run: npm install
+        run: |
+          cd frontend
+          npm install
 
-      # STEP 4: Build React app
       - name: Build React app
-        working-directory: frontend
-        run: npm run build
+        run: |
+          cd frontend
+          npm run build
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload build artifact
+      - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
           path: frontend/build
