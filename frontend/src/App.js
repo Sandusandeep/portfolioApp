@@ -3,8 +3,7 @@ import {
   HashRouter as Router,
   Routes,
   Route,
-  Link,
-  useNavigate,
+  Link
 } from "react-router-dom";
 import ProjectPage from "./ProjectPage";
 
