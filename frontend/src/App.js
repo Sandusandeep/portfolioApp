@@ -85,11 +85,21 @@ function App() {
               SANDEEP <span className="highlight">C</span>
             </Link>
           </div>
-          <nav>
-            <Link to="/">About</Link>
-            <ScrollToSkillsLink />
-            <Link to="/projects">Projects</Link>
-            <ContactNavLink />
+          <nav className="navbar">
+            <ul>
+              <li>
+                <Link to="/">About</Link>
+              </li>
+              <li>
+                <a href="#skills">Skills</a>
+              </li>
+              <li>
+                <Link to="/projects">Projects</Link>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
           </nav>
         </header>
         <Routes>
@@ -103,29 +113,66 @@ function App() {
                   <div className="hero-text">
                     <h2>Hello, I'm</h2>
                     <h1>Sandeep C</h1>
-                    <h3>Frontend Developer/ Fullstack developer</h3>
-                    <p>React JS | Advanced JavaScript | Redux</p>
+                    <h3>
+                      Infinity Developer/ Frontend Developer/ Fullstack
+                      developer
+                    </h3>
+                    <p>Kony | React JS | Advanced JavaScript | Redux</p>
                   </div>
                 </section>
                 {/* Professional Summary & Skills */}
                 <section id="skills" className="skills-section">
                   <h2>Professional Summary</h2>
                   <p>
-                    Front-end-focused Software Analyst with 3+ years of
-                    experience in building scalable, performance, and modular
-                    applications. Skilled in React.js, JavaScript, Java, HTML,
-                    CSS, and API integration, with a strong foundation in
-                    software architecture and component-based development.
-                    Experienced in collaborating with cross-functional teams to
-                    deliver intuitive, user-centric web applications and
-                    error-free and optimized code.
+                    Frontend-focused Software Engineer with <b>3.3+ years</b> of
+                    enterprise experience in building scalable applications
+                    using <b>Temenos Infinity</b> (Kony Framework) within
+                    banking and financial domains. Strong expertise in modular
+                    UI development, API integration, and cross-functional
+                    collaboration.
+                    <br />
+                    <br />
+                    Additionally, possess hands-on experience in{" "}
+                    <b>
+                      React.js, modern JavaScript, Node.js, Express.js, and
+                      MongoDB,
+                    </b>{" "}
+                    gained through <b>structured self-learning</b> and
+                    real-world sample projects as well. Actively seeking
+                    opportunities as a{" "}
+                    <b>
+                      Frontend / React / MERN/ Software Engineer /Software
+                      developer
+                    </b>
+                    , with <b>flexibility to adapt to new technologies</b> and
+                    role requirements.
                   </p>
                   <h3>Skills</h3>
                   <ul className="skills-list">
+                    <h3
+                      style={{
+                        fontFamily: "Franklin Gothic Medium",
+                        color: "green",
+                      }}
+                    >
+                      Primary skills
+                    </h3>
                     <li>
                       <b>Frontend:</b> React JS, Advanced JavaScript, Redux,
                       HTML, CSS, Hooks, Responsive UI
                     </li>
+                    <li>
+                      <b>Enterprise UI:</b> Temenos Infinity, Kony Visualizer,
+                      Kony Fabric
+                    </li>
+                    <h3
+                      style={{
+                        fontFamily: "Franklin Gothic Medium",
+                        color: "green",
+                      }}
+                    >
+                      Secondary skills
+                    </h3>
                     <li>
                       <b>Styling:</b> CSS Modules, Styled components
                     </li>
@@ -133,14 +180,21 @@ function App() {
                       <b>Database:</b> MongoDB
                     </li>
                     <li>
-                      <b>Backend:</b> Node.js, Express.js, API integration, Java
-                      8+
+                      <b>Backend:</b> Node.js, Express.js, API integration
                     </li>
                     <li>
                       <b>Tools:</b> Git, GitLab, Maven, Temenos Infinity (Kony
                       Framework)
                     </li>
                   </ul>
+                  <div className="ctc-section" style={{ marginTop: "24px" }}>
+                    <div className="ctc-item">
+                      Current CTC:<span className="ctc-value">13 LPA</span>
+                    </div>
+                    <div className="ctc-item">
+                      Expected CTC:<span className="ctc-value">10 - 13LPA</span>
+                    </div>
+                  </div>
                 </section>
                 {/* Contact Section */}
                 <section id="contact" className="contact-section">

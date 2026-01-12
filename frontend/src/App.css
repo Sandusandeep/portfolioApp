@@ -1,3 +1,53 @@
+/* Navigation Bar Styles */
+.navbar {
+  display: flex;
+  align-items: center;
+  margin-left: 40px;
+}
+.navbar ul {
+  display: flex;
+  gap: 24px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar li {
+  font-size: 18px;
+}
+.navbar a,
+.navbar .active {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.navbar a:hover,
+.navbar .active {
+  color: #6c63ff;
+}
+/* CTC Section Alignment */
+.ctc-section {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.ctc-item {
+  color: #ffc300;
+  font-weight: bold;
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+}
+
+.ctc-value {
+  color: #212529;
+  font-weight: normal;
+  font-size: 20px;
+  margin-left: 8px;
+}
 .project-image-modal {
   position: fixed;
   top: 0;
