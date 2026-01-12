@@ -30,50 +30,6 @@ const formImages = importAll(
   )
 );
 
-function ScrollToSkillsLink() {
-  const navigate = useNavigate();
-  function handleClick(e) {
-    e.preventDefault();
-    if (window.location.hash !== "#/") {
-      navigate("/");
-      setTimeout(() => {
-        const el = document.getElementById("skills");
-        if (el) el.scrollIntoView({ behavior: "smooth" });
-      }, 100);
-    } else {
-      const el = document.getElementById("skills");
-      if (el) el.scrollIntoView({ behavior: "smooth" });
-    }
-  }
-  return (
-    <a href="#skills" onClick={handleClick}>
-      Skills
-    </a>
-  );
-}
-
-function ContactNavLink() {
-  const navigate = useNavigate();
-  function handleContactClick(e) {
-    e.preventDefault();
-    if (window.location.hash !== "#/") {
-      navigate("/");
-      setTimeout(() => {
-        const el = document.getElementById("contact");
-        if (el) el.scrollIntoView({ behavior: "smooth" });
-      }, 100);
-    } else {
-      const el = document.getElementById("contact");
-      if (el) el.scrollIntoView({ behavior: "smooth" });
-    }
-  }
-  return (
-    <a href="#contact" onClick={handleContactClick}>
-      Contact
-    </a>
-  );
-}
-
 function App() {
   return (
     <Router>
