@@ -47,7 +47,7 @@ export default function ProjectPage({
         </div>
       )}
       <h3>Github repository: </h3>
-      <a href="${repository}">{repository}</a>
+      <a href={repository}>{repository}</a>
       <br />
       <br />
       <br />
